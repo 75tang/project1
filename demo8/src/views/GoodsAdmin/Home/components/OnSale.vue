@@ -101,7 +101,10 @@ export default {
   methods: {
     search(){
       console.log('search')
-    }
+    },
+    handleSelectionChange(val) {
+        this.multipleSelection = val;
+      }
   },
 }
 </script>

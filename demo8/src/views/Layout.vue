@@ -1,9 +1,9 @@
 <template>
   <div class="Layout">
       <SidBar/>
-      <div>
+      <div class="layout_right">
           <RHeader/>
-          <div>
+          <div class="layout_home">
               <transition>
                   <router-view></router-view>
               </transition> 
@@ -28,10 +28,10 @@ export default {
 .Layout {
   display: flex;
   background: #eee;
-  .layou_box {
+  .layou_right {
     width: 100%;
     overflow: hidden;
-    .content_box {
+    .layout_home {
       height: calc(100vh - 100px);
       overflow: auto;
       margin: 20px;
