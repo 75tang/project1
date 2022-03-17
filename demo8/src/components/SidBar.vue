@@ -57,6 +57,27 @@
           <el-menu-item index="4-2" @click="onRecord">结算记录</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
+      <el-submenu index="5">
+        <template slot="title">
+          <span>账号管理</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="5-1">
+             角色管理
+          </el-menu-item>
+          <el-menu-item index="5-2">权限管理</el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
+      <el-submenu index="6">
+        <template slot="title">
+          <span>系统设置</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="6-1">
+             店铺信息
+          </el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
       <!-- <el-submenu index="5">
         <template slot="title">
           <span>账号管理</span>
