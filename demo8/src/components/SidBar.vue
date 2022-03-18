@@ -1,6 +1,5 @@
 <template>
-  <div>
-    
+  <div class="sidBar">
     <el-menu
       default-active="1"
       class="el-menu-vertical-demo"
@@ -62,27 +61,6 @@
           <span>账号管理</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="5-1">
-             角色管理
-          </el-menu-item>
-          <el-menu-item index="5-2">权限管理</el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-      <el-submenu index="6">
-        <template slot="title">
-          <span>系统设置</span>
-        </template>
-        <el-menu-item-group>
-          <el-menu-item index="6-1">
-             店铺信息
-          </el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-      <!-- <el-submenu index="5">
-        <template slot="title">
-          <span>账号管理</span>
-        </template>
-        <el-menu-item-group>
           <el-menu-item index="5-1" @click="onRole">
              角色管理
           </el-menu-item>
@@ -94,11 +72,11 @@
           <span>系统设置</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="6-1" @click="onShopping">
+          <el-menu-item index="6-1" @click="onStore">
              店铺信息
           </el-menu-item>
         </el-menu-item-group>
-      </el-submenu> -->
+      </el-submenu>
     </el-menu>
   </div>
 </template>
@@ -132,6 +110,16 @@ export default {
       onRecord(){
         this.$router.push( {path:'/record'})
       },
+      onRole(){
+        this.$router.push(
+          {path:'/role'})
+      },
+      onLimit(){
+        this.$router.push( {path:'/limit'})
+      },
+      onStore(){
+        this.$router.push({path:'/store'})
+      }
     }
 }
 </script>
@@ -141,7 +129,7 @@ export default {
     width: 200px;
     height: 100vh;
 
-}    .el-menu {
+} .el-menu {
     border-right: solid 0px #e6e6e6;
     list-style: none;
     position: relative;

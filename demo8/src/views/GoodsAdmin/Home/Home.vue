@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style>
+.demo-home{
+  color: white;
+}
 .el-tabs__header {
     padding: 20px;
     position: relative;

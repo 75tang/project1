@@ -56,15 +56,16 @@ export default {
 
 <style lang='scss' scoped>
 .login{
-    background-color: aquamarine;
     background-size: 100% 100%;
     width: 100%;
     height: 100vh;
     .title{
-    margin:7vh 8vw 0;
+   /*  margin:7vh 8vw 0; */
+   
     font-size:3vw;
     font-weight:bold;
     color: #0de3ee;
+    text-align:left;
     }
     .content{
         width: 100%;
@@ -87,7 +88,7 @@ export default {
                 font-weight:bold;
             }
             .rule-form{
-                width: 100%;
+                width: 300px;
                 height: 100%;
                 .submit{
                     width: 100%;

@@ -1,10 +1,10 @@
 <template>
   <div class="Layout">
       <SidBar/>
-      <div class="layout_right">
+      <div class="layout_box">
           <RHeader/>
-          <div class="layout_home">
-              <transition>
+          <div class="content_box">
+              <transition name="fade-transform" mode="out-in">
                   <router-view></router-view>
               </transition> 
           </div>
@@ -28,16 +28,17 @@ export default {
 .Layout {
   display: flex;
   background: #eee;
-  .layou_right {
-    width: 100%;
-    overflow: hidden;
-    .layout_home {
+  .layout_box {
+  /*   width: 100%; */
+    /* overflow: hidden; */
+/*     color: #eee; */
+    .content_box {
       height: calc(100vh - 100px);
       overflow: auto;
       margin: 20px;
       padding: 20px;
       box-sizing: border-box;
-      background: #fff;
+      background:white;
     }
   }
 

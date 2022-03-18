@@ -77,6 +77,30 @@ const routes = [
           title:'结算记录'
         }
       },
+      {
+        path:'/role',
+        name:'role',
+        component:()=>import('../views/UserAdmin/RoleAdmin/RoleAdmin.vue'),
+        meta:{
+          title:'角色管理'
+        }
+      },
+      {
+        path:'/limit',
+        name:'limit',
+        component:()=>import('../views/UserAdmin/LimitAdmin/LimitAdmin.vue'),
+        meta:{
+          title:'权限控制'
+        }
+      },
+      {
+        path:'/store',
+        name:'store',
+        component:()=>import('../views/System/StoreIn/StoreIn.vue'),
+        meta:{
+          title:'店铺信息'
+        }
+      },
     ]
   },  
   {
