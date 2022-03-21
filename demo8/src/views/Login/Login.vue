@@ -1,20 +1,20 @@
 <template>
   <div class="login">
-      <p class="title">兰溪管理后台</p>
+      <p class="title">兰溪文旅后台管理系统</p>
       <div class="content">
           <div class="login-box">
-              <p class="p1">用户登录管理</p>
+              <p class="p1">用户登录</p>
               <el-form
               :model='ruleForm'
               ref="ruleForm"
               :rules='rules'
-              class='rule-form'
+              class='rule_form'
               >
                 <el-form-item prop='userName'>
-                    <el-input v-model="ruleForm.userName" placeholder='手机号'></el-input>
+                    <el-input prefix-icon="el-icon-user" clearable v-model="ruleForm.userName" placeholder='手机号'></el-input>
                 </el-form-item>
                 <el-form-item prop='passWord'>
-                    <el-input type="primary" v-model="ruleForm.passWord" placeholder='请输入密码' @keyup.enter.native='submitForm(ruleForm)'></el-input>
+                    <el-input prefix-icon="el-icon-view" clearable type="primary" v-model="ruleForm.passWord" placeholder='请输入密码' @keyup.enter.native='submitForm(ruleForm)'></el-input>
                 </el-form-item>
                 <el-form-item>
                      <el-button class="submit" type='primary' @click="submitForm('ruleForm')">登录</el-button>
@@ -57,9 +57,10 @@ export default {
 <style lang='scss' scoped>
 .login{
     background-size: 100% 100%;
-    width: 100%;
-    height: 100vh;
+    /* width: 100%; */
+/*     height: 100vh; */
     .title{
+        margin-left: 50px;
    /*  margin:7vh 8vw 0; */
    
     font-size:3vw;
@@ -77,6 +78,7 @@ export default {
             height: 28vw;
             margin-top:10vh;
             display: flex;
+            border: 1px solid rgba(0,0,200,0.3);
             flex-direction: column;
             align-items: center;
             p{
@@ -87,9 +89,9 @@ export default {
                 font-size:2vw;
                 font-weight:bold;
             }
-            .rule-form{
-                width: 300px;
-                height: 100%;
+            .rule_form{
+                width: 28vw;
+                height: 25vh;
                 .submit{
                     width: 100%;
                     height: 100%;

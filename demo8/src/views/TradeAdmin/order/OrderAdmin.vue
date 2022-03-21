@@ -58,7 +58,6 @@
         border
         :data="tableData"
         highlight-current-row
-        @current-change="handleCurrentChange"
         style="width: 100%">
         <el-table-column
           type="index"
@@ -150,10 +149,11 @@ export default {
 .order_form{
   display:flex;
   justify-content: row;
-  .demo_button{
-    display: inline-block;
-  }
 }
+  .demo_button{
+    display: flex;
+    justify-content: center;
+  }
 .el-select {
     width: 300px;
     /* display: inline-block; */ 

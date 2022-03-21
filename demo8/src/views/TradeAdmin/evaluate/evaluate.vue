@@ -69,13 +69,14 @@ export default {
     flex-direction: column;
     .form_top{
       display:flex;
-      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
     .form_flex{
       margin-right: 20px;
       margin-bottom: 20px;
       display: flex;
       align-items: center;
+      width: 300px;
       > span{
         display: inline-block;
         min-width: 80px;

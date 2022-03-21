@@ -1,5 +1,6 @@
 <template>
   <div class="sidBar">
+   <!--  <i class="el-icon-s-unfold" v-bind="isCollapse" @click="onClick"></i> -->
     <el-menu
       default-active="1"
       class="el-menu-vertical-demo"
@@ -83,7 +84,12 @@
 
 <script>
 export default {
-
+/*   data(){
+    return{
+      isCollapse:true
+    }
+  },
+ */
     methods:{
       onHome(){
         this.$router.push({path:'/home'})
