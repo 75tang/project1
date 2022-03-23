@@ -101,6 +101,38 @@ const routes = [
           title:'店铺信息'
         }
       },
+      {
+        path:'/form',
+        name:'form',
+        component:()=>import('../views/Components/Form.vue'),
+        meta:{
+          title:'表单基础'
+        }
+      },
+      {
+        path:'/select',
+        name:'select',
+        component:()=>import('../views/Components/Select.vue'),
+        meta:{
+          title:'选择器'
+        }
+      },
+      {
+        path:'/check',
+        name:'check',
+        component:()=>import('../views/Components/Check.vue'),
+        meta:{
+          title:'选择框'
+        }
+      },
+      {
+        path:'/tabs',
+        name:'tabs',
+        component:()=>import('../views/Components/Tabs.vue'),
+        meta:{
+          title:'标签页'
+        }
+      }
     ]
   },  
   {

@@ -78,6 +78,19 @@
           </el-menu-item>
         </el-menu-item-group>
       </el-submenu>
+      <el-submenu index='7'>
+        <template slot="title">
+          <span>
+            组件熟悉
+          </span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="7-1" @click="onForm">表单基础</el-menu-item>
+          <el-menu-item index="7-2" @click="onSelect">选择器</el-menu-item>
+          <el-menu-item index="7-3" @click="onCheck">选择框</el-menu-item>
+          <el-menu-item index="7-4" @click="onTabs">标签页</el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
     </el-menu>
   </div>
 </template>
@@ -125,6 +138,18 @@ export default {
       },
       onStore(){
         this.$router.push({path:'/store'})
+      },
+      onForm(){
+        this.$router.push({path:'/form'})
+      },
+      onSelect(){
+        this.$router.push({path:'/select'})
+      },
+      onCheck(){
+        this.$router.push({path:'/check'})
+      },
+      onTabs(){
+        this.$router.push({path:'/tabs'})
       }
     }
 }
