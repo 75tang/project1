@@ -132,6 +132,22 @@ const routes = [
         meta:{
           title:'标签页'
         }
+      },
+      {
+        path:'/tree',
+        name:'tree',
+        component:()=>import('../views/Components/Tree.vue'),
+        meta:{
+          title:'树'
+        }
+      },
+      {
+        path:'/treeSelect',
+        name:'treeSelect',
+        component:()=>import('../views/Components/router-push/TreeSelect.vue'),
+        meta:{
+          title:'树选择'
+        }
       }
     ]
   },  

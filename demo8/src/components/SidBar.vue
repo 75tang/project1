@@ -89,6 +89,7 @@
           <el-menu-item index="7-2" @click="onSelect">选择器</el-menu-item>
           <el-menu-item index="7-3" @click="onCheck">选择框</el-menu-item>
           <el-menu-item index="7-4" @click="onTabs">标签页</el-menu-item>
+          <el-menu-item index="7-5" @click="onTree">树</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
@@ -150,7 +151,10 @@ export default {
       },
       onTabs(){
         this.$router.push({path:'/tabs'})
-      }
+      },
+      onTree(){
+        this.$router.push({path:'/tree'})
+      },
     }
 }
 </script>
