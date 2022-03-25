@@ -14,8 +14,8 @@
                 :min="0" :max="99" style="width:30%" 
                 v-model="formData.value2"
                 step="0.01"
-                :formatter="value => `${value}$`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')"
-                :parser="value => value.replace(/\$\s?|(,*)/g, '')"
+                :formatter="value2 => `${value}$`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')"
+                :parser="value2 => value2.replace(/\$\s?|(,*)/g, '')"
                ></a-input-number> 
             </a-input-group>          
         </a-form-model-item>
@@ -23,12 +23,12 @@
             <template>
                 <div class="icon_wrapper">
                    <a-icon :style="{color:preColor}" type="frown-o"></a-icon>
-                   <a-row gutter="10">
+                   <a-row :gutter="10">
                        <a-col :span="20">
                           <a-slider id="test" :marks="marks" :step="null" v-model="formData.value" :disabled="disabled" :min="0" :max="100" @change="handleChange"/> 
                        </a-col>
                        <a-col :span="2">
-                          <a-input-number v-model="formData.value" :disabled="disabled" :min="0" :max="100"></a-input-number>  
+                          <a-input-number v-model="formData.value5" :disabled="disabled" :min="0" :max="100"></a-input-number>  
                        </a-col>                      
                    </a-row>                                      
                    <a-slider :marks="marks" range v-model="formData.value3" :min="0" :max="100" reverse></a-slider>
@@ -70,7 +70,7 @@ export default {
                 value2:'9',
                 value3:['30','60'],
                 value4:false,
-                value:'30'
+                value5:'30'
             }
         }
     },
@@ -92,7 +92,7 @@ export default {
         },
         onDisabled(){
             this.disabled=!this.disabled
-        }
+        },
     }
 }
 </script>

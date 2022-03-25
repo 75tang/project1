@@ -101,14 +101,14 @@ const routes = [
           title:'店铺信息'
         }
       },
-      {
+/*       {
         path:'/form',
         name:'form',
         component:()=>import('../views/Components/Form.vue'),
         meta:{
           title:'表单基础'
         }
-      },
+      }, */
       {
         path:'/select',
         name:'select',
@@ -142,13 +142,21 @@ const routes = [
         }
       },
       {
-        path:'/treeSelect',
-        name:'treeSelect',
-        component:()=>import('../views/Components/router-push/TreeSelect.vue'),
+        path: '/upload',
+        name: 'upload',
+        component: ()=>import('../views/Components/Upload.vue'),
         meta:{
-          title:'树选择'
+          title:'上传'
         }
-      }
+      },
+      {
+        path: '/alert',
+        name: 'alert',
+        component: ()=>import('../views/Components/Alert.vue'),
+        meta:{
+          title:'弹框'
+        }
+      },
     ]
   },  
   {

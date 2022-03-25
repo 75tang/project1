@@ -79,9 +79,6 @@
     </span>
   </a-transfer>
   </div>  
-  <div>
-      <a-upload></a-upload>
-  </div>
 </div>
   
 </template>
